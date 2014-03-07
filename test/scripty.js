@@ -45,9 +45,10 @@ describe('scripty', function() {
       var digest = blank.digest;
 
       redis.script('flush', function(err) {
-        blank.run(1, 'hi', function(err, res) {
+        blank.run(1, 'hi', function(err, result) {
 
           should.not.exist(err);
+          result.should.equal('hi');
 
           scripty.cache.has('blank').should.equal(true);
 
