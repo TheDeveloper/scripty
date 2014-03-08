@@ -1,6 +1,6 @@
 {
   "name": "node-redis-scripty",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Redis script manager for node.js",
   "main": "lib/scripty.js",
   "scripts": {
