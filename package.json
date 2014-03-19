@@ -2,7 +2,7 @@
   "name": "node-redis-scripty",
   "version": "0.0.2",
   "description": "Redis script manager for node.js",
-  "main": "lib/scripty.js",
+  "main": "lib/Scripty.js",
   "scripts": {
     "test": "make test"
   },
