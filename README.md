@@ -27,7 +27,7 @@ var redis = require('redis').createClient();
 var src = 'return KEYS[1]';
 var scripty = new Scripty(redis);
 scripty.loadScript('blank', src, function(err, script) {
-  blank.run(1, 'hi', function(err, result) {
+  script.run(1, 'hi', function(err, result) {
     if (err) return;
 
     // Should print 'hi'
