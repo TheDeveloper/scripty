@@ -24,7 +24,7 @@
   "homepage": "https://github.com/thedeveloper/scripty",
   "dependencies": {
     "lru-cache": "^2.5.0",
-    "extend": "^1.2.1"
+    "extend": "^3.0.2"
   },
   "devDependencies": {
     "should": "^3.1.3",
