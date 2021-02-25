@@ -1,10 +1,15 @@
 {
   "name": "node-redis-scripty",
   "version": "0.0.5",
-  "description": "Redis script manager for node.js",
-  "main": "lib/Scripty.js",
+  "description": "Easily use redis scripts in Node",
+  "main": "dist/index",
   "scripts": {
-    "test": "make test"
+    "pretest": "npm run start-redis",
+    "posttest": "npm run cleanup",
+    "test": "mocha --exit test/script",
+    "start-redis": "docker-compose up -d redis",
+    "cleanup": "docker-compose stop && docker-compose rm -f",
+    "monitor": "docker-compose up monitor"
   },
   "repository": {
     "type": "git",
@@ -22,13 +27,10 @@
     "url": "https://github.com/thedeveloper/scripty/issues"
   },
   "homepage": "https://github.com/thedeveloper/scripty",
-  "dependencies": {
-    "lru-cache": "^2.5.0",
-    "extend": "^1.2.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "should": "^3.1.3",
-    "mocha": "^1.17.1",
-    "redis": "^0.10.1"
+    "chai": "^4.3.0",
+    "mocha": "^8.3.0",
+    "redis": "^3.0.2"
   }
 }
