@@ -1,5 +1,5 @@
 {
-  "name": "@thedeveloper/redis-script",
+  "name": "node-redis-script",
   "version": "1.0.1",
   "description": "Easily use redis scripts in Node",
   "main": "src/index",
