@@ -2,7 +2,7 @@ redis:
   image: redis:3.2-alpine
   ports:
     - 6385:6379
-  container_name: scripty-redis
+  container_name: script-redis
 
 monitor:
   image: redis:3.2-alpine
@@ -10,4 +10,4 @@ monitor:
     - redis
   entrypoint: "/bin/sh"
   command: >
-    "-c" "redis-cli -h scripty-redis -p 6379 monitor"
+    "-c" "redis-cli -h script-redis -p 6379 monitor"
