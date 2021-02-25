@@ -1,11 +1,11 @@
-scripty
+redis-script
 =======
 
 Easily run redis scripts from Node.
 
 # Requirements
 
-* [node-redis](https://github.com/mranney/node_redis) v0.10+
+* [node-redis](https://github.com/NodeRedis/node-redis) v0.10+
 * Redis `v2.6` or above
 * Node 10+
 
