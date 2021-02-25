@@ -1,6 +1,6 @@
 {
   "name": "node-redis-script",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Easily use redis scripts in Node",
   "main": "src/index",
   "scripts": {
