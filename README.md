@@ -1,5 +1,7 @@
-scripty
-=======
+# DEPRECATED
+Use https://github.com/TheDeveloper/node-redis-script instead.
+
+---
 
 Redis script manager for node.js.
 
