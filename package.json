@@ -2,7 +2,7 @@
   "name": "node-redis-scripty",
   "version": "0.0.5",
   "description": "Easily use redis scripts in Node",
-  "main": "dist/index",
+  "main": "src/index",
   "scripts": {
     "pretest": "npm run start-redis",
     "posttest": "npm run cleanup",
