@@ -11,7 +11,7 @@ Easily run redis scripts from Node.
 
 # Install
 
-    npm install node-redis-scripty
+    npm install node-redis-script
 
 # Usage
 
